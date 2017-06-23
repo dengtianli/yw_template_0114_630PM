@@ -1,0 +1,249 @@
+/* CSS Document */
+
+.page-container{
+}
+.page-sidebar{
+	width: 225px;
+}
+@media (min-width: 980px){
+.page-sidebar {
+	position: absolute;
+	width: 225px;
+	float:left;
+}
+}
+
+.sidebar-shortcuts {
+	background-color: #fafafa;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+	line-height: 39px;
+	max-height: 41px;
+	margin-bottom: 0;
+}
+.sidebar-shortcuts {
+	text-align: center;
+	line-height: 39px;	
+}
+.sidebar-shortcuts-large>.btn {
+	width: 48px;
+	line-height: 34px;
+	margin-top: -2px;
+	padding: 0;
+	text-align: center;
+}
+
+
+ul.sidebar-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin: 0;
+	padding: 0;
+}
+ul.sidebar-menu>li{
+	width:225px;
+	line-height:36px;
+	display:block;
+	border-bottom:1px solid #C8C8C8;
+	border-right:1px solid #c8c8c8;
+	cursor:pointer;
+}
+ul.sidebar-menu>li>a:hover {
+	background-color:white;
+	color:#0080C0;
+}
+ul.sidebar-menu li a{
+	padding-left:20px;
+	color:#2B2B2B;
+	font-weight:600;
+	font-size:14px;
+	display: block;
+	height: 38px;
+	line-height: 36px;
+	padding: 0 16px 0 17px;
+	color: #585858;
+	text-shadow: none!important;
+	text-decoration: none;
+}
+
+ul.sidebar-menu li a .arrow:before{
+	float: right;
+	margin-top: 1px;
+	margin-right: 18px;
+	display: inline;
+	font-size: 16px;
+	font-family: FontAwesome;
+	height: auto;
+	content: "\f104";
+	font-weight: 300;
+	text-shadow: none;
+}
+.sidebar-menu li.active{
+	border-width: 4px 3px;
+	border-bottom-width:1px;
+	border-right-color: #2b7dbc;
+}
+
+
+
+ul.sidebar-menu li.active a .arrow:before{
+	float: right;
+	margin-top: 1px;
+	display: inline;
+	font-size: 16px;
+	font-family: FontAwesome;
+	height: auto;
+	content: "\f107";
+	font-weight: 300;
+	text-shadow: none;
+}
+ul.sidebar-menu li a .arrow.open:before{
+	float: right;
+	margin-top: 1px;
+	margin-right: 3px;
+	display: inline;
+	font-family: FontAwesome;
+	height: auto;
+	font-size: 16px;
+	content: "\f107";
+	font-weight: 300;
+	text-shadow: none;
+}
+ul.sidebar-menu>li.active a{
+	color:#337ab7;
+}
+ul.sidebar-menu>li.active .submenu{
+	display:block;
+}
+ul.sidebar-menu>li>.submenu{
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background-color: #fff;
+	border-top: 1px solid #e5e5e5;
+	overflow: hidden;
+}
+ul.sidebar-menu>li>.submenu:before{
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 1;
+	left: 18px;
+	top: 0;
+	bottom: 0;
+	border: 1px dotted #9dbdd6;
+	border-width: 0 0 0 1px;
+}
+ul.sidebar-menu>li>.submenu>li>a{
+	display: block;
+	position: relative;
+	color: #616161;
+	margin: 0;
+	border-top: 1px dotted #e4e4e4;
+	padding: 0px 0px 0px 37px;
+	font-weight:normal;
+}
+ul.sidebar-menu>li>.submenu>li>a:hover,ul.sidebar-menu>li>.submenu>li>a.active{
+	color:#337ab7;
+	background-color:#F9F9F9;
+}
+.sidebar-menu .menu-text{
+	vertical-align:middle;
+}
+.sidebar-menu [class*="glyphicon-"] {
+	font-weight:100;
+	margin-right:8px;
+	vertical-align:middle;
+	text-align:center;
+	display:inline-block;
+	font-size:16px;
+}
+.main-content{
+	margin-left: 225px;
+	margin-right: 0;
+	margin-top: 0;
+	min-height: 100%;
+	padding: 0;
+}
+.breadcrums{
+	position: relative;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #f5f5f5;
+	min-height: 40px;
+	line-height: 40px;
+	display: block;
+}
+.breadcrum{
+	background-color: transparent;
+	display: inline-block;
+	line-height: 24px;
+	margin: 0 22px 0 12px;
+	margin-bottom:-10px;
+	padding: 0;
+	font-size: 13px;
+	color: #333;
+	border-radius: 0;
+	list-style: none;
+}
+.breadcrum li{
+	float:left;
+}
+.breadcrum li+li:before{
+	font-family: FontAwesome;
+	content: "\f105";
+	color: #b2b6bf;
+	margin-right: 2px;
+	margin-left:6px;
+	padding: 0 5px 0 2px;
+	position: relative;
+}
+.nav-search{
+	position: absolute;
+	top: 6px;
+	right: 22px;
+	line-height: 24px;
+}
+.input-icon>[class*="icon-"] {
+	padding: 0 3px;
+	z-index: 2;
+	position: absolute;
+	top: 1px;
+	bottom: 1px;
+	left: 3px;
+	line-height: 28px;
+	display: inline-block;
+	color: #909090;
+	font-size: 16px;
+}
+.nav-search .nav-search-icon {
+	color: #6fb3e0!important;
+	font-size: 14px!important;
+	line-height: 24px!important;
+}
+.nav-search-icon {
+	border: 0;
+	border-radius: 0;
+	padding: 0 3px!important;
+}
+.nav-search .nav-search-input {
+	border: 1px solid #6fb3e0;
+	width: 152px;
+	height: 28px!important;
+	font-size: 13px;
+	color: #666!important;
+	z-index: 11;
+}
+.input-icon>input {
+	padding-left: 24px;
+	padding-right: 6px;
+}
+.page-content{
+	background: #fff;
+	margin: 0;
+	padding: 8px 20px 24px;
+	border:1px solid #E8E8E8;
+	height:auto;
+}

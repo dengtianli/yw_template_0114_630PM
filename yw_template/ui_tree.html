@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/ui_tree.css"/>
+</head>
+<body>
+<div>
+	<!--BEGIN main-container-->
+        	<div class="breadcrums">
+            	<ul class="breadcrum">
+                	<li>
+						<i class="glyphicon glyphicon-home"></i>
+						<a href="#">首页</a>
+					</li>
+
+					<li>
+						<a href="#">UI组件</a>
+					</li>
+					<li >
+                    树形菜单</li>                
+                </ul>
+                
+                <div class="nav-search">
+                		<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
+									<i class="glyphicon glyphicon-search  nav-search-icon"></i>
+								</span>
+							</form>
+                </div>
+            </div>
+				<!-- BEGIN PAGE CONTENT-->
+					<div class="row">
+
+					<div class="col-md-12">
+
+						<!-- BEGIN PORTLET-->   
+
+						<div class="portlet box yellow">
+
+							<div class="portlet-title">
+
+								<div class="caption"><i class="icon-reorder"></i>树形菜单</div>
+
+								<div class="tools">
+
+									<a href="javascript:;" class="collapse"></a>
+
+									<a href="javascript:;" class="remove"></a>
+
+								</div>
+
+							</div>
+
+							<div class="portlet-body form">
+                            
+                            	<!--
+                                	<div class="tree" id="tree">
+                                	<div class="tree-folder">
+                                    	<div class="tree-folder-header">
+                                        	<i class="icon-plus"></i>
+                                            <div class="tree-folder-name"><input type="checkbox" /><a data-toggle="collapse" data-parent="#tree" href="#sichuan">四川</a></div>
+                                        </div>
+                                        <div class="tree-folder-content collapse" id="sichuan">
+                                        	<div class="tree-item">
+                                            	<input type="checkbox" />
+                                                name1
+                                            </div>
+                                            <div class="tree-item">
+                                            	<input type="checkbox" />
+                                                name1
+                                            </div>
+                                            <div class="tree-item">
+                                            	<input type="checkbox" />
+                                                name1
+                                            </div>
+                                            <div class="tree-item">
+                                            	<input type="checkbox" />
+                                                name1
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tree-folder">
+                                    	<div class="tree-folder-header">
+                                        	<i class="icon-plus"></i>
+                                            <div class="tree-folder-name"><input type="checkbox" />重庆</div>
+                                        </div>
+                                        <div class="tree-folder-content">
+                                        	<div class="tree-item">
+                                            	<input type="checkbox" />
+                                                name1
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tree-folder">
+                                    	<div class="tree-folder-header">
+                                        	<i class="icon-plus"></i>
+                                            <div class="tree-folder-name"><input type="checkbox" />浙江</div>
+                                        </div>
+                                        <div class="tree-folder-content">
+                                        	<div class="tree-item">
+                                            	<input type="checkbox" />
+                                                name1
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tree-folder">
+                                    	<div class="tree-folder-header">
+                                        	<i class="icon-plus"></i>
+                                            <div class="tree-folder-name"><input type="checkbox" />上海</div>
+                                        </div>
+                                        <div class="tree-folder-content">
+                                        	<div class="tree-item">
+                                            	<input type="checkbox" />
+                                                name1
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tree-item">
+                                    	<input type="checkbox" />
+                                                name1
+                                    </div>
+                                </div>
+                                -->
+                            
+                            
+                            
+                            
+                            
+                            
+                            	<div >
+									<ul class="ui_tree" id="ui_tree">
+                                		<li>
+                                 		  <input type="checkbox" class="group-checkable" data-set="#ui_tree .chboxes" /><a data-toggle="collapse" data-parent="tree" href="#board"><span class="glyphicon glyphicon-plus"></span>&nbsp;总公司</a>
+                                            <ul id="board" class="collapse">
+                                            	<li><input type="checkbox" class="group-checkable chboxes" data-set="#board .chboxes"/><a data-toggle="collapse" href="#manager"><span class="glyphicon glyphicon-plus"></span>&nbsp;股东会</a>
+                                                	<ul id="manager" class="collapse">
+                                                    	<li><input type="checkbox" class="group-checkable chboxes" data-set="#manager .chboxes"/><a data-toggle="collapse" href="#department"><span class="glyphicon glyphicon-plus"></span>&nbsp;董事会</a></li>
+                                                        <ul class="collapse" id="department">
+                                                        	<li><input type="checkbox" class="chboxes"/>&nbsp;产品部</li>
+                                                            <li><input type="checkbox" class="chboxes"/>&nbsp;市场部</li>
+                                                            <li><input type="checkbox" class="chboxes"/>&nbsp;研发部</li>
+                                                            <li><input type="checkbox" class="chboxes"/>&nbsp;运营部</li>
+                                                            <li><input type="checkbox" class="chboxes"/>&nbsp;财务部</li>
+                                                            <li><input type="checkbox" class="chboxes"/>&nbsp;测试部</li>
+                                                            <li><input type="checkbox" class="chboxes"/>&nbsp;UI设计部</li>
+                                                            <li><input type="checkbox" class="group-checkable chboxes" data-set="#hr_back .chboxes"/><a data-toggle="collapse" href="#hr_back"><span class="glyphicon glyphicon-plus"></span>&nbsp;总经办</a>
+                                                            <ul class="collapse" id="hr_back">
+                                                            	<li><input type="checkbox" class="chboxes"/>&nbsp;总经理助理</li>
+                                                                <li><input type="checkbox" class="chboxes"/>&nbsp;人力资源部</li>
+                                                                <li><input type="checkbox" class="chboxes"/>&nbsp;后勤部</li>
+                                                            </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </li>
+                                              
+                                            </ul>
+                                  	  </li>
+                               		</ul>
+                                </div>
+								
+
+						    </div>
+
+						</div>
+
+						<!-- END PORTLET-->
+
+                    
+			</div>
+				
+				
+				<!-- END PAGE CONTENT-->
+				
+
+				
+        <!--END main-container-->
+</div>
+
+
+
+
+<script>
+$('.portlet .tools a.remove').click(function(e){
+			e.preventDefault();
+            var removable = jQuery(this).parents(".portlet");
+            if (removable.next().hasClass('portlet') || removable.prev().hasClass('portlet')) {
+                jQuery(this).parents(".portlet").remove();
+            } else {
+                jQuery(this).parents(".portlet").parent().remove();
+            }
+	});
+
+$(".portlet .tools .collapse, .portlet .tools .expand").click(function(e){
+	       e.preventDefault();
+            var el = jQuery(this).closest(".portlet").children(".portlet-body");
+            if (jQuery(this).hasClass("collapse")) {
+                jQuery(this).removeClass("collapse").addClass("expand");
+                el.slideUp(200);
+            } else {
+                jQuery(this).removeClass("expand").addClass("collapse");
+                el.slideDown(200);
+            }
+});
+
+$(".ui_tree a").click(function(){
+	var span_child = $(this).find("span");
+	if(span_child.hasClass("glyphicon-plus")){
+		span_child.removeClass("glyphicon-plus").addClass("glyphicon-minus");
+	}
+	else{
+		span_child.removeClass("glyphicon-minus").addClass("glyphicon-plus");
+	}
+	
+});
+$(document).ready(function(e) {
+	var UITree = function(){
+		return {
+			init:function(){
+				jQuery("#ui_tree .group-checkable").change(function(){
+			var set = jQuery(this).attr("data-set");
+			var checked = jQuery(this).is(":checked");
+			jQuery(set).each(function() {
+                if(checked){
+					$(this).attr("checked",true);
+				}
+				else{
+					$(this).attr("checked",false);
+				}
+            });
+			jQuery.uniform.update(set);
+		});
+			}
+		};
+		
+	}();
+	UITree.init();
+});
+</script>
+</body>
+</html>

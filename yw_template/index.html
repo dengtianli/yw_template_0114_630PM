@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="ie8">
+<![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>后台模板</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!--BEGIN top css-->
+<link rel="stylesheet" href="css/navbar.css"/>
+<!--END top css-->
+<!--END main container css-->
+<link rel="stylesheet" href="css/page-container.css"/>
+<!--END main container css-->
+<!--BEGIN core css-->
+<link href="css/style-responsive.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/style-metro.css" rel="stylesheet" type="text/css" />
+<!--END core css-->
+<link rel="stylesheet" type="text/css" href="css/select2.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
+
+
+</head>
+
+<body>
+<!-- BEGIN header-->
+	<div class="navbar navbar-default" role="navigation">
+    	<div class="container-fluid navbar-bg ">
+        	<!-- BEGIN logo-->
+        	<div class="navbar-header pull-left">
+            	<a href="#"><img src="images/common/logo.png" /></a>
+            </div>
+            <!-- END logo-->
+            <div class="navbar-header pull-right">
+            	<!-- BEGIN navbar-right-->
+            	<ul class="nav">
+               		<!-- BEGIN tasks-->
+                	<li class="light-blue">
+                    	<a data-toggle="dropdown" class="dropdown-toggle" href="#" title="待办">
+                        	<i class="glyphicon glyphicon-tasks" ></i><span class="nav-info"></span>&nbsp;
+                            <span class="badge nav-info badge-red">3</span>
+                        </a>
+                        <ul class="pull-right dropdown-menu dropdown-navbar">
+								<li class="dropdown-header ">
+									<i class="glyphicon glyphicon-ok"></i>
+									您有三项待办任务
+								</li>
+
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-tasks task-bg"></span>&nbsp;修改用户密码，确保账户安全!
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-tasks task-bg"></span>&nbsp;新版本v1.2发布
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-tasks task-bg"></span>&nbsp;移动设备更新
+									</a>
+								</li>
+                                
+                                	<li>
+									<a href="#" >
+										查看所有待办&nbsp;
+                                        <span class="glyphicon glyphicon-hand-right"></span>
+									</a>
+								</li>
+
+							</ul>
+                    </li>
+                    <!-- END tasks-->
+                    <!-- BEGIN notice-->
+                    <li class="light-green"><a data-toggle="dropdown" class="dropdown-toggle" href="#" title="通知">
+                        	<i class="glyphicon glyphicon-bell" ></i><span class="nav-info"></span>&nbsp;
+                            <span class="badge nav-info">5</span>
+                        </a>
+                         <ul class="pull-right dropdown-menu dropdown-navbar">
+								<li class="dropdown-header ">
+									<i class="glyphicon glyphicon-ok"></i>
+									您有5条未读通知
+								</li>
+
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-info-sign info-bg"></span>&nbsp;新用户注册会员。
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-info-sign info-bg"></span>&nbsp;服务器设备检查通知
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-info-sign info-bg"></span>&nbsp;关于调整主页风格，规范使用记录
+									</a>
+								</li>
+                                <li>
+									<a href="#">
+										<span class="glyphicon glyphicon-info-sign info-bg"></span>&nbsp;系统测试，任务发布通知
+									</a>
+								</li>
+                                 <li>
+									<a href="#">
+										<span class="glyphicon glyphicon-info-sign info-bg"></span>&nbsp;欢迎用户关注我们的官方微博@yw
+									</a>
+								</li>
+                                
+                                	<li>
+									<a href="#">
+										查看所有通知&nbsp;
+                                        <span class="glyphicon glyphicon-hand-right"></span>
+									</a>
+								</li>
+
+							</ul>
+                    </li>
+                    <!-- END notice-->
+                    <!-- BEGIN message-->
+                    <li class="light-orange">
+                    	<a data-toggle="dropdown" class="dropdown-toggle" href="#" title="消息">
+                        	<i class="glyphicon glyphicon-envelope" ></i><span class="nav-info"></span>&nbsp;
+                            <span class="badge nav-info">5</span>
+                        </a>
+                         <ul class="pull-right dropdown-menu dropdown-navbar">
+								<li class="dropdown-header ">
+									<i class="glyphicon glyphicon-ok"></i>
+									您有三条未读消息
+								</li>
+
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-envelope message-bg"></span>&nbsp;小赵刚刚给您发来消息
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-envelope message-bg"></span>&nbsp;管理员发来一封邮件
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-envelope message-bg"></span>&nbsp;邀您参加第二届java博弈大赛
+									</a>
+								</li>
+                                
+                                	<li>
+									<a href="#">
+										查看所有消息&nbsp;
+                                        <span class="glyphicon glyphicon-hand-right"></span>
+									</a>
+								</li>
+
+							</ul>
+                   </li> 
+                   <!-- END message-->
+                   <!-- BEGIN welcome-->
+                   <li class="welcome">
+                    	 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        	<i class="glyphicon glyphicon-user" ></i>&nbsp;<span class="nav-info">欢迎您，佚名</span>
+                            <span class="caret"></span>
+                        </a>
+                         <ul class="pull-right dropdown-menu">
+								
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-user myinfo"></span>&nbsp;个人资料</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-tasks"></span>&nbsp;我的待办(3)
+									</a>
+								</li>
+                                <li>
+                                	<a href="#">
+                                    	<span class="glyphicon glyphicon-info-sign"></span>&nbsp;我的通知(5)
+                                    </a>
+                                </li>
+                                <li>
+									<a href="#">
+										<span class="glyphicon glyphicon-envelope "></span>&nbsp;我的消息(5)
+									</a>
+								</li>
+                                <li class="divider"></li>
+                                <li>
+									<a href="#">
+										<span class="glyphicon glyphicon-lock "></span>&nbsp;锁屏
+									</a>
+								</li>
+                                <li>
+									<a href="#">
+										<span class="glyphicon glyphicon glyphicon-log-out "></span>&nbsp;退出
+									</a>
+								</li>
+
+							</ul>
+                    </li>
+                    <!-- END welcome-->
+                  </ul>
+                   <!-- END navbar-right-->
+                   </div>
+                        
+        </div>
+    </div>
+<!-- END header-->
+    
+    <!--BEGIN container-->
+    <div class="page-container">
+
+		<!-- BEGIN SIDEBAR -->
+
+		<div class="page-sidebar ">
+			<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+						<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+							<button class="btn btn-success">
+                            	<span class="glyphicon glyphicon-signal"></span>
+							</button>
+
+							<button class="btn btn-info">
+								<span class="glyphicon glyphicon-pencil"></span>
+							</button>
+
+							<button class="btn btn-warning">
+								<span class="glyphicon glyphicon-th-list"></span>
+							</button>
+
+							<button class="btn btn-danger">
+								<span class="glyphicon glyphicon-cog"></span>
+							</button>
+						</div>
+
+					</div>
+			<!-- BEGIN SIDEBAR MENU -->        
+
+		<!-- BEGIN SIDEBAR MENU -->        
+
+			<ul class="sidebar-menu">
+				<li>
+					<a href="#" class="dropdown-toggle">
+                         <span class="glyphicon glyphicon-magnet"></span>
+                         <span class="menu-text">UI组件</span>
+                         <span class="arrow"></span>
+                    </a>
+                    <ul class="submenu">
+                   		<li><a href="javascript:;">按钮组</a></li>
+                    	<li><a href="javascript:;">模态框</a></li>
+                        <li><a href="javascript:;">标签页&折叠窗</a></li>
+                        <li><a href="javascript:;">树形菜单</a></li>
+                    </ul>
+				</li>
+                <li>
+                	<a href="#">
+                	<span class="glyphicon glyphicon-list"></span>
+                    <span class="menu-text">表格</span>
+                    <span class="arrow"></span>
+					</a>
+                     <ul class="submenu">
+                    	<li><a href="javascript:;">基础表格</a></li>
+                        <li><a href="javascript:;">管理表格</a></li>
+                        <li><a href="javascript:;">可编辑表格</a></li>
+                    </ul>
+				</li>
+                <li>
+                	<a href="#">
+                	<span class="glyphicon glyphicon-edit"></span>
+                    <span class="menu-text">表单</span>
+                    <span class="arrow"></span></a>
+                    <ul class="submenu">
+                    	<li><a href="#">基础表单</a></li>
+                        <li><a href="#">向导表单</a></li>
+                    </ul>
+					
+				</li>
+                <li>
+					<a href="#">
+                    <span class="glyphicon glyphicon-wrench"></span>
+                    <span class="menu-text">插件</span>
+                    <span class="arrow"></span>
+                    </a>
+                    <ul class="submenu">
+                    	<li><a href="javascript:;">表格插件</a></li>
+                        <li><a href="javascript:;">下拉插件</a></li>
+                        <li><a href="javascript:;">表单验证</a></li>
+                    </ul>
+				</li>
+                <li>
+					<a href="#">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                    <span class="menu-text">日历</span>
+                    <span class="arrow"></span>
+                    </a>
+                    <ul class="submenu">
+                    	<li><a href="#">日期</a></li>
+                    </ul>
+				</li>
+				 <li>
+                	<a href="#">
+                	<span class="glyphicon glyphicon-file"></span>
+                    <span class="menu-text">页面</span>
+                    <span class="arrow"></span>
+					</a>
+                    <ul class="submenu">
+                    	<li><a href="login.html">登录页面</a></li>
+                        <li><a href="regist.html">注册</a></li>
+                        <li><a href="404.html">错误页面400</a></li>
+                        <li><a href="500.html">错误页面500</a></li>
+                    </ul>
+				</li>
+                <li>
+                	<a href="#">
+                	<span class="glyphicon glyphicon-file"></span>
+                    <span class="menu-text">其他</span>
+                    <span class="arrow"></span>
+					</a>
+                    <ul class="submenu">
+                    	<li><a href="#">图片管理</a></li>
+                    </ul>
+				</li>
+			</ul>
+
+			<!-- END SIDEBAR MENU -->
+
+			<!-- END SIDEBAR MENU -->
+
+		</div>
+
+		<!-- END SIDEBAR -->
+
+		<!-- BEGIN PAGE -->
+
+		<div class="page-content " >
+			<!--BEGIN PAGE CONTAINER-->
+			
+
+			
+
+			<!-- END PAGE CONTAINER-->    
+
+		</div>
+
+		<!-- END PAGE -->
+
+	</div>
+    <!--END container-->
+    
+    
+    <!--BEGIN footer-->
+    <div class="footer"></div>
+    <!--END footer-->
+    
+   
+    <!--BEGIN core-->
+    
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.datetimepicker.js"></script>
+   <!--[if lt IE 9]>
+
+	<script src="js/excanvas.min.js"></script>
+
+	<script src="js/respond.min.js"></script>  
+
+	<![endif]-->   
+  	<script src="js/select2.min.js"></script>
+    <!--END core-->
+    <!--BEGIN tables-->
+    <script src="js/jquery.dataTables.js"></script>
+	<script src="js/DT_bootstrap.js"></script>
+    <script src="js/table-managed.js"></script>  
+    <script src="js/table-editable.js"></script>
+    <!--END tables-->
+    <!--BEGIN forms-->
+    <script src="js/jquery.uniform.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.metadata.js"></script>
+    <script src="js/validate.messages_ch.js"></script>
+	<script src="js/jquery.bootstrap.wizard.min.js"></script>
+	<script src="js/app.js"></script> 
+    <script src="js/form-samples.js"></script>       
+    <script src="js/form-wizard.js"></script>  
+     <script src="js/jquery.fancybox.pack.js"></script> 
+    <!--END forms-->   
+    <script>
+	$(document).ready(function(e) {
+		$(".sidebar-menu>li>a").click(function(){
+			$(".submenu").parent().removeClass("active open");
+			if($(this).next().is(":hidden") == true){
+				$(".submenu").slideUp();
+				$(this).next().slideDown();
+				$(this).parent().addClass("active open");
+			}
+			else{
+				$(".submenu").slideUp();
+			}
+		});
+	});
+	
+	$(".sidebar-menu li .submenu li a").click(function(){
+		$(".sidebar-menu li .submenu li a").removeClass("active");
+		$(this).addClass("active");
+		if($(this).text() == "按钮组"){
+			$(".page-content").load("ui_buttons.html");
+		}
+		if($(this).text() == "模态框"){
+			$(".page-content").load("ui_modals.html");
+		}
+		if($(this).text() == "标签页&折叠窗"){
+			$(".page-content").load("ui_tabs&accordions.html");
+		}
+		if($(this).text() == "树形菜单"){
+			$(".page-content").load("ui_tree.html");
+		}
+		if($(this).text() == "基础表格"){
+			$(".page-content").load("table_simple.html");
+		}
+		if($(this).text() == "管理表格"){
+			$(".page-content").load("table_managed.html");
+		}
+		if($(this).text() == "可编辑表格"){
+			$(".page-content").load("table_editable.html");
+		}
+		if($(this).text() == "基础表单"){
+			$(".page-content").load("form_samples.html");
+		}
+		if($(this).text() == "向导表单"){
+			$(".page-content").load("form_wizard.html");
+		}
+		if($(this).text() == "表格插件"){
+			$(".page-content").load("plugin_table.html");
+		}
+		
+		if($(this).text() == "下拉插件"){
+			$(".page-content").load("plugin_select.html");
+		}
+		
+		if($(this).text() == "表单验证"){
+			$(".page-content").load("plugin_validate.html");
+		}
+		
+		if($(this).text() == "日期"){
+			$(".page-content").load("calendar.html");
+		}
+		if($(this).text() == "图片管理"){
+			$(".page-content").load("other_image.html");
+		}
+		
+	
+		
+	});
+    </script>
+    
+</body>
+</html>

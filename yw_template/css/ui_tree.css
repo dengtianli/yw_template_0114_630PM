@@ -1,0 +1,69 @@
+/* CSS Document */
+
+.ui_tree ,.ui_tree  li{
+	list-style:none;
+}
+.tree{
+	position:relative;
+	padding-left:10px;
+}
+.tree:before{
+	display:inline;
+	content:"";
+	position:absolute;
+	top:10px;
+	left:0px;
+	bottom:6px;
+	border:1px dotted #67b2dd;
+	border-width:0 0 0 1px;
+	z-index:1;
+}
+.tree .tree-folder{
+	display:block;
+	cursor:pointer;
+	
+}
+.tree .tree-item,.tree .tree-folder{
+	position:relative;
+}
+.tree .tree-item:before,.tree .tree-folder:before{
+	display:inline;
+	content:"";
+	position:absolute;
+	top:18px;
+	left:-10px;
+	width:16px;
+	height:0;
+	border-top:1px dotted #67b2dd;
+	z-index:1;
+}
+.tree .tree-folder .tree-folder-content{
+	margin-left:23px;
+	position:relative;
+}
+.tree .tree-item,.tree .tree-folder .tree-folder-header{
+	padding:5px;
+	position:relative;
+	margin:0;
+	height:30px;
+	line-height:30px;
+	color:#5D5D5D;
+}
+.tree .tree-folder .tree-folder-header .tree-folder-name{
+	display:inline;
+	margin-left:5px;
+	height:30px;
+	line-height:30px;
+}
+.tree .tree-folder .tree-folder-content:before{
+	display:inline;
+	position:absolute;
+	content:"";
+	top:-5px;
+	left:-13px;
+	bottom:11px;
+	border:1px dotted #67b2dd;
+	border-width:0 0 0 1px;
+	z-index:1;
+	
+}

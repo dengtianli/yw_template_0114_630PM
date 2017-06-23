@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/uniform.default.css" />
+    <link rel="stylesheet" href="css/form.css" />
+</head>
+<body>
+	<!--BEGIN main-container-->
+        	<div class="breadcrums">
+            	<ul class="breadcrum">
+                	<li>
+						<i class="glyphicon glyphicon-home"></i>
+						<a href="#">首页</a>
+					</li>
+
+					<li>
+						<a href="#">插件</a>
+					</li>
+					<li >
+                    下拉插件</li>                
+                </ul>
+                
+                <div class="nav-search">
+                		<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
+									<i class="glyphicon glyphicon-search  nav-search-icon"></i>
+								</span>
+							</form>
+                </div>
+            </div>
+          
+
+				<!-- BEGIN PAGE CONTENT-->
+
+				<div class="row">
+
+					<div class="col-md-12">
+                    <div class="tabbable tabbable-custom boxless">
+                    
+								
+
+								
+
+								<div class="tab-pane active"  id="tab_4">
+
+									<div class="portlet box green ">
+
+										<div class="portlet-title">
+
+											<div class="caption"><i class="icon-reorder"></i>下拉菜单</div>
+
+											
+
+										</div>
+
+										<div class="portlet-body form">
+
+											<!-- BEGIN FORM-->
+
+											<form action="#" class="form-horizontal form-bordered">
+
+												<div class="control-group">
+
+													<label class="control-label">常用下拉菜单</label>
+
+												  <div class="controls">
+	<select class="full_width" id="select1">
+
+																<option value=""></option>																<option value="选项1">选项1</option>																<option value="选项2">选项2</option>																<option value="选项3">选项3</option>
+<option value="选项4">选项4</option>
+<option value="选项5">选项5</option>
+<option value="选项6">选项6</option>
+                                                                														</select>
+
+												  </div>
+
+												</div>
+
+												<div class="control-group">
+
+													<label class="control-label">含禁用选项</label>
+
+												  <div class="controls">
+	<select class="full_width" id="select2">
+
+																<option value=""></option>																<option value="选项1">选项1</option>																<option value="选项2" disabled="disabled">选项2(disabled)</option>																<option value="选项3">选项3</option>
+<option value="选项4">选项4</option>
+<option value="选项5">选项5</option>
+<option value="选项6">选项6</option>
+                                                                														</select>
+
+												  </div>
+
+												</div>
+
+												
+
+												<div class="control-group">
+
+													<label class="control-label">支持多选</label>
+
+												  <div class="controls">
+	<select class="full_width" id="select3" multiple >
+
+																<option value=""></option>																<option value="选项1">选项1</option>																<option value="选项2">选项2</option>																<option value="选项3">选项3</option>
+<option value="选项4">选项4</option>
+<option value="选项5">选项5</option>
+<option value="选项6">选项6</option>
+                                                                														</select>
+
+												  </div>
+
+												</div>
+
+												
+
+												
+
+												
+
+												
+
+												<div class="control-group">
+
+													<label class="control-label"><button id="btn_enable" class="btn btn-primary">启用</button>&nbsp;<button class="btn btn-info" id="btn_disable">禁用</button></label>
+
+												  <div class="controls">
+	<select class="full_width" id="select4">
+
+																<option value=""></option>																<option value="选项1">选项1</option>																<option value="选项2">选项2</option>																<option value="选项3">选项3</option>
+<option value="选项4">选项4</option>
+<option value="选项5">选项5</option>
+<option value="选项6">选项6</option>
+                                                                														</select>
+
+												  </div>
+
+												</div>
+
+																															</form>
+
+											<!-- END FORM-->  
+
+										</div>
+
+									</div>
+
+								</div>
+
+					  </div>
+                    </div>
+                    
+                    <!--BEGIN profile-->
+                    <div class="col-md-12">
+               	  <div class="table-profile">
+                    	<h2>jquery select2插件</h2>
+                        
+                  </div>
+                    <div class="table-profile-content">
+                    	<p>
+                        <h3>简介</h3>
+                         -----select2是jquery扩展的美化下拉框的插件，它能让简单的select下拉框变得更好看、更方便，支持搜索，远程数据集以及滚动的效果。它提供给了核心js包select2.js和样式文件select2.css，使用时引入他们即可，同时别忘了先引入jquery。</div>
+                    <div class="table-profile-content">
+                        <h3>使用方法</h3>
+                        <p>-----最简单的使用方式：在页面加载完成后调用$("#selectId").select2();
+                        	<xmp>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/select2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/select2.css" />
+
+<select class="full_width" id="select1">	
+    <option value=""></option>			
+    <option value="选项1">选项1</option>	
+    <option value="选项2">选项2</option>	
+</select>
+<script>
+jQuery(document).ready(function() {  
+	$("#select1").select2();
+});
+</script>
+</xmp>
+                        </p>
+                        <p>-----禁用选项：在选项option中添加属性disabled="disabled"。</p>
+                        <p>-----多选：只要定义属性multiple=""就行。</p>
+                        <p>-----动态绑定数据：可以采用select2提供的ajax方式获取数据组织html。</p>
+                    </div>
+                    
+                </div>
+                    <!--end profile-->
+
+				<!-- END PAGE CONTENT-->         
+
+			</div>
+                <!--END main-->
+                
+                
+  </div>
+        <!--END main-container-->
+    
+
+	<script>
+
+		jQuery(document).ready(function() {  
+       	$("#select1").select2();
+		$("#select2").select2({
+			placeholder: "请选择",
+	        allowClear: true
+		});
+		$("#select3").select2();
+		//enable
+		$("#btn_enable").on("click",function(){
+			$("#select4").prop("disabled",false);
+		});
+		//disable
+		$("#btn_disable").on("click",function(){
+			$("#select4").prop("disabled",true);
+		});
+
+});
+		
+	</script>
+</body>
+</html>

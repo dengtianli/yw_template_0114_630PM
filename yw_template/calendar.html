@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="css/form.css"/>
+</head>
+<body>
+<div>
+	<!--BEGIN main-container-->
+        	<div class="breadcrums">
+            	<ul class="breadcrum">
+                	<li>
+						<i class="glyphicon glyphicon-home"></i>
+						<a href="#">首页</a>
+					</li>
+
+					<li>
+						<a href="#">日历</a>
+					</li>
+					<li >
+                    日期</li>                
+                </ul>
+                
+                <div class="nav-search">
+                		<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
+									<i class="glyphicon glyphicon-search  nav-search-icon"></i>
+								</span>
+							</form>
+                </div>
+            </div>
+				<!-- BEGIN PAGE CONTENT-->
+					<div class="row">
+                    	<div class="col-md-12">
+                        <div class="portlet box yellow">
+
+							<div class="portlet-title">
+
+								<div class="caption"><i class="icon-reorder"></i>jQuery日期插件</div>
+
+								<div class="tools">
+
+									<a href="javascript:;" class="collapse"></a>
+
+									<a href="javascript:;" class="remove"></a>
+
+								</div>
+
+							</div>
+
+							<div class="portlet-body form">
+
+								<!-- BEGIN FORM-->
+
+								<form action="#" class="form-horizontal form-bordered">
+                               <div class="row">
+
+								 <div class=" col-md-12 ">
+
+														<div class="control-group">
+
+															<label class="control-label" >时间</label>
+
+															<div class="controls">
+
+															<input type="text" value="2015/01/11 05:06" id="datetimepicker" class="m-wrap span" />
+                                                            <span>yyyy/MM/dd HH:mm</span>
+
+															</div>
+
+														</div>
+
+													</div>
+
+								  </div>
+                                  <div class="row">
+
+													<div class=" col-md-12 ">
+
+														<div class="control-group">
+
+															<label class="control-label" >日期选择</label>
+
+															<div class="controls">
+
+															<input type="text" id="datetimepicker_normal" class="m-wrap span" /><span>不含时分yyyy-mm-dd</span>
+
+															</div>
+
+														</div>
+
+													</div>
+
+												</div>
+                                                
+                                                <div class="row">
+
+													<div class=" col-md-12 ">
+
+														<div class="control-group">
+
+															<label class="control-label" >只选择时分</label>
+
+															<div class="controls">
+
+															<input type="text" id="datetimepicker1" class="m-wrap span" /><span>HH:mm</span>
+
+															</div>
+
+														</div>
+
+													</div>
+
+												</div>
+                                                 
+                                                
+                                                
+                                                
+                                                <div class="row">
+
+													<div class=" col-md-12 ">
+
+														<div class="control-group">
+
+															<label class="control-label" >带日期的时分选择</label>
+
+															<div class="controls">
+
+															<input type="text" id="datetimepicker5" class="m-wrap span" /><span>yyyy-MM-dd HH:mm</span>
+
+															</div>
+
+														</div>
+
+													</div>
+
+												</div>
+                                                
+                                                <div class="row">
+
+													<div class=" col-md-12 ">
+
+														<div class="control-group">
+
+															<label class="control-label" >
+日期选择选项设置</label>
+
+															<div class="controls">
+
+															<input type="text" id="datetimepicker7" class="m-wrap span" /><span>如果选中的是周六，则可选择的最小时间为11:00，其他则为8:00</span>
+
+															</div>
+
+														</div>
+
+													</div>
+
+												</div>
+                                                <div class="row">
+
+													<div class=" col-md-12 ">
+
+														<div class="control-group">
+
+															<label class="control-label" >日期选择</label>
+
+															<div class="controls">
+
+															<input type="text" id="datetimepicker2" class="m-wrap span" /><span>只能选择前后三天dd/mm/yyyy</span>
+
+															</div>
+
+														</div>
+
+													</div>
+
+												</div>
+                                                
+                                                <div class="row">
+
+													<div class=" col-md-12 ">
+
+														<div class="control-group">
+
+															<label class="control-label" >
+onGenerate</label>
+
+															<div class="controls">
+
+															<input type="text" id="datetimepicker8" class="m-wrap span" />
+															<span>禁用前后三天</span>
+
+															</div>
+
+														</div>
+
+													</div>
+
+												</div>
+                                                
+                                                <div class="row">
+
+													<div class=" col-md-12 ">
+
+														<div class="control-group">
+
+															<label class="control-label" >
+禁用周末</label>
+
+															<div class="controls">
+<input type="text" id="datetimepicker9" class="m-wrap span" />
+															</div>
+
+														</div>
+
+													</div>
+
+												</div>
+                                                  <div class="row">
+
+													<div class=" col-md-12 ">
+
+														<div class="control-group">
+
+															<label class="control-label" >
+禁用当前时间以前</label>
+
+															<div class="controls">
+<input type="text" id="datetimepicker10" class="m-wrap span" />
+															</div>
+
+														</div>
+
+													</div>
+
+												</div>
+
+								</form>
+
+								<!-- END FORM-->  
+
+							</div>
+
+						</div>
+                        </div>
+                    </div>
+
+
+
+
+ <script>
+$('.portlet .tools a.remove').click(function(e){
+			e.preventDefault();
+            var removable = jQuery(this).parents(".portlet");
+            if (removable.next().hasClass('portlet') || removable.prev().hasClass('portlet')) {
+                jQuery(this).parents(".portlet").remove();
+            } else {
+                jQuery(this).parents(".portlet").parent().remove();
+            }
+	});
+
+$(".portlet .tools .collapse, .portlet .tools .expand").click(function(e){
+	       e.preventDefault();
+            var el = jQuery(this).closest(".portlet").children(".portlet-body");
+            if (jQuery(this).hasClass("collapse")) {
+                jQuery(this).removeClass("collapse").addClass("expand");
+                el.slideUp(200);
+            } else {
+                jQuery(this).removeClass("expand").addClass("collapse");
+                el.slideDown(200);
+            }
+});
+
+$(document).ready(function(e) {
+$('#datetimepicker10').datetimepicker({
+	timepicker:false,
+	minDate:"",
+	lang:'ch',
+	format:"Y-m-d"
+});
+$('#datetimepicker_mask').datetimepicker({
+	mask:'9999/19/39 29:59',
+	lang:'ch',
+});
+$('#datetimepicker').datetimepicker();
+$('#datetimepicker').datetimepicker({value:'2015/01/09 05:03',step:10,lang:'ch',});
+$('#datetimepicker1').datetimepicker({
+	datepicker:false,
+	format:'H:i',
+	step:5,
+	lang:'ch',
+});
+$("#datetimepicker_normal").datetimepicker({
+	lang:"ch",
+	timepicker:false,
+	format:'Y-m-d'
+});
+$('#datetimepicker2').datetimepicker({
+	lang:'ch',
+	timepicker:false,
+	format:'d/m/Y',
+	formatDate:'Y/m/d',
+	minDate:'-1970/01/02', // yesterday is minimum date
+	maxDate:'+1970/01/02' // and tommorow is maximum date calendar
+});
+$('#datetimepicker3').datetimepicker({
+	inline:true,
+	lang:'ch',
+});
+$('#datetimepicker4').datetimepicker();
+$('#open').click(function(){
+	$('#datetimepicker4').datetimepicker('show');
+});
+$('#close').click(function(){
+	$('#datetimepicker4').datetimepicker('hide');
+});
+$('#reset').click(function(){
+	$('#datetimepicker4').datetimepicker('reset');
+});
+$('#datetimepicker5').datetimepicker({
+	datepicker:false,
+	allowTimes:['12:00','13:00','15:00','17:00','17:05','17:20','19:00','20:00'],
+	format:"Y-m-d H:i",
+	lang:'ch',
+});
+$('#datetimepicker6').datetimepicker();
+$('#destroy').click(function(){
+	if( $('#datetimepicker6').data('xdsoft_datetimepicker') ){
+		$('#datetimepicker6').datetimepicker('destroy');
+		this.value = 'create';
+	}else{
+		$('#datetimepicker6').datetimepicker();
+		this.value = 'destroy';
+	}
+});
+var logic = function( currentDateTime ){
+	if( currentDateTime.getDay()==6 ){
+		this.setOptions({
+			minTime:'11:00'
+		});
+	}else
+		this.setOptions({
+			minTime:'8:00'
+		});
+};
+$('#datetimepicker7').datetimepicker({
+	onChangeDateTime:logic,
+	onShow:logic,
+	lang:'ch'
+});
+$('#datetimepicker8').datetimepicker({
+	onGenerate:function( ct ){
+		$(this).find('.xdsoft_date')
+			.toggleClass('xdsoft_disabled');
+	},
+	minDate:'-1970/01/2',
+	maxDate:'+1970/01/2',
+	timepicker:false,
+	format:"Y-m-d",
+	lang:'ch'
+});
+$('#datetimepicker9').datetimepicker({
+	onGenerate:function( ct ){
+		$(this).find('.xdsoft_date.xdsoft_weekend')
+			.addClass('xdsoft_disabled');
+	},
+	weekends:['01.01.2014','02.01.2014','03.01.2014','04.01.2014','05.01.2014','06.01.2014'],
+	timepicker:false,
+	lang:'ch'
+});
+});
+</script>
+</body>
+</html>

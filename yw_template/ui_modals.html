@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="js/util/dialog/dialogImport.js" rel="stylesheet">
+</head>
+<body>
+<div>
+	<!--BEGIN main-container-->
+        	<div class="breadcrums">
+            	<ul class="breadcrum">
+                	<li>
+						<i class="glyphicon glyphicon-home"></i>
+						<a href="#">首页<button id="btn">点我</button></a>
+					</li>
+
+					<li>
+						<a href="#">UI组件</a>
+					</li>
+					<li >
+                    模态框</li>                
+                </ul>
+                
+                <div class="nav-search">
+                		<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
+									<i class="glyphicon glyphicon-search  nav-search-icon"></i>
+								</span>
+							</form>
+                </div>
+            </div>
+				<!-- BEGIN PAGE CONTENT-->
+
+				<div class="row">
+
+					<div class="col-md-12">
+
+						<!-- BEGIN PORTLET-->   
+
+						<div class="portlet box blue">
+
+							<div class="portlet-title">
+
+								<div class="caption"><i class="icon-reorder"></i>模态框</div>
+
+								<div class="tools">
+
+									<a href="javascript:;" class="collapse"></a>
+
+									<a href="javascript:;" class="remove"></a>
+
+								</div>
+
+							</div>
+
+							<div class="portlet-body form">
+
+								<table class="table table-hover table-striped table-bordered">
+
+									<tr>
+
+										<td>常用模态框</td>
+
+										<td><button class="btn btn-primary" data-toggle="modal" 
+   data-target="#normal">
+  创建模态框
+</button></td>
+
+									</tr>
+
+									<tr>
+
+										<td>键盘关闭模态框</td>
+
+										<td><button class="btn btn-primary" data-toggle="modal" 
+   data-target="#keyboard-modal">
+  创建模态框
+</button></td>
+
+									</tr>
+
+									
+
+										<td>关闭检查事件模态框</td>
+
+										<td><button class="btn btn-primary" data-toggle="modal" 
+   data-target="#onHideModal">
+  创建模态框</button></td>
+
+									</tr>
+
+								</table>
+
+<!-- 模态框（Modal） normal-->
+<div class="modal fade" id="normal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               模态框（Modal）标题
+            </h4>
+         </div>
+         <div class="modal-body">
+            在这里添加一些文本
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+            <button type="button" class="btn btn-primary">
+               提交更改
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+</div>
+<!-- 模态框（Modal） keyboard-->
+<div class="modal fade" id="keyboard-modal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <script> $(function () { $('#myModal').modal({
+      keyboard: true
+   })});
+   </script>
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               模态框（Modal）标题
+            </h4>
+         </div>
+         <div class="modal-body">
+            按下Esc键退出
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+            <button type="button" class="btn btn-primary">
+               提交更改
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+</div>
+
+<!-- 模态框（Modal） on-hide-modal-->
+<div class="modal fade" id="onHideModal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <script>
+   	$(function(){
+		$("#onHideModal").modal('hide');
+		$("#onHideModal").on("hide.bs.modal",function(){
+	alert("确定要关闭么？");
+});
+	});
+   </script>
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               模态框（Modal）标题
+            </h4>
+         </div>
+         <div class="modal-body">
+            点击关闭按钮检查事件
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+            <button type="button" class="btn btn-primary">
+               提交更改
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+</div>
+
+						  </div>
+
+						</div>
+
+						<!-- END PORTLET-->
+
+			</div>
+				
+				<!-- END PAGE CONTENT-->
+				
+
+				
+        <!--END main-container-->
+</div>
+<script>
+$('.portlet .tools a.remove').click(function(e){
+			e.preventDefault();
+            var removable = jQuery(this).parents(".portlet");
+            if (removable.next().hasClass('portlet') || removable.prev().hasClass('portlet')) {
+                jQuery(this).parents(".portlet").remove();
+            } else {
+                jQuery(this).parents(".portlet").parent().remove();
+            }
+	});
+
+$(".portlet .tools .collapse, .portlet .tools .expand").click(function(e){
+	       e.preventDefault();
+            var el = jQuery(this).closest(".portlet").children(".portlet-body");
+            if (jQuery(this).hasClass("collapse")) {
+                jQuery(this).removeClass("collapse").addClass("expand");
+                el.slideUp(200);
+            } else {
+                jQuery(this).removeClass("expand").addClass("collapse");
+                el.slideDown(200);
+            }
+});
+$(function(){
+	new BootstrpDialog().alert({
+		title : "嘿嘿",
+		body: "sdgsdfg",
+		tag : $("#btn")
+	});
+})
+</script>
+</body>
+</html>

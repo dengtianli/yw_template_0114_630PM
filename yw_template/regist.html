@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="regist-bg">
+<head>
+	<title>亚网速信后台注册页面</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">  
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="css/regist.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+      <script type="text/javascript" src="js/validate.messages_ch.js"></script>
+</head>
+<body>
+
+    <div class="regist-wrapper">
+        <a href="index.html">
+            <img class="logo" src="images/common/logo.png">
+        </a>
+
+        <div class="box">
+            <div class="content-wrap">
+                <h6>注册</h6>
+                <form class="form-horizontal" role="form" id="regist_form" action="login.html">
+                	<div class="form-group">
+                    	<label for="username" class="control-label col-md-3" >用&nbsp;&nbsp;户&nbsp;&nbsp;名<span class="required_star">*</span>:</label>
+                        
+                        <div class="col-md-9" >
+                        	<input  type="text" name="username"  class="form-control required regist_input " minLength="5" id="username" placeholder="请输入用户名"  />
+                        </div>
+                       
+                       
+                    </div>	
+                    <div class="form-group">
+                    	<label for="password" class="control-label col-md-3">设置密码<span class="required_star">*</span>:</label>
+                        <div class="col-md-9">
+                        	<input type="password" name="password" class="form-control regist_input required" minLength="6" id="password" />
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                    	<label for="repassword" class="control-label col-md-3" >重复密码<span class="required_star">*</span>:</label>
+                        <div class="col-md-9">
+                        	<input type="password" name="repassword" class="form-control regist_input required" id="repassword"  equalTo="#password"/>
+                        </div>
+                    </div>
+                     <div class="form-group">
+                    	<label for="phone" class="control-label col-md-3" >手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机<span class="required_star">*</span>:</label>
+                        <div class="col-md-9">
+                        	<input type="text" name="phone" class="form-control regist_input required" id="phone" />
+                        </div>
+                         
+                    </div>
+                     <div class="form-group">
+                    	<label for="email" class="control-label col-md-3" >邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱<span class="required_star">*</span>:</label>
+                        <div class="col-md-9">
+                        	<input type="text" name="email" class="form-control regist_input required email" id="email" />
+                        </div>
+                         
+                    </div>
+                <div class="submit-regist">
+                <button type="submit" class="btn btn-primary btn-regist"><span class="glyphicon glyphicon-ok"></span>&nbsp;立即注册</button>
+                </div>
+                </form>
+            </div>
+        </div>
+
+      
+    </div>
+    <script>
+		$().ready(function() {
+  			$("#regist_form").validate({
+			 errorClass: 'validate-form',
+			 doNotHideMessage: true, 
+             errorElement: 'span', 
+             focusInvalid: false,
+             highlight: function (element) { 
+                    $(element).closest('.form-group').removeClass('success').addClass('error'); 
+                },
+
+                unhighlight: function (element) { 
+                    $(element)
+                        .closest('.form-group').removeClass('error'); 
+                },
+                success: function (label) {
+                   
+                   label.addClass('valid ok').closest('.form-group').removeClass('error').addClass('success'); 
+                }
+               
+			});
+		});
+       
+</script>
+</body>
+</html>

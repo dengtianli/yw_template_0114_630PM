@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/uniform.default.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
+</head>
+<body>
+	<!--BEGIN main-container-->
+        	<div class="breadcrums">
+            	<ul class="breadcrum">
+                	<li>
+						<i class="glyphicon glyphicon-home"></i>
+						<a href="#">首页</a>
+					</li>
+
+					<li>
+						<a href="#">其他</a>
+					</li>
+					<li >
+                    图片管理</li>                
+                </ul>
+                
+                <div class="nav-search">
+                		<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off">
+									<i class="glyphicon glyphicon-search  nav-search-icon"></i>
+								</span>
+							</form>
+                </div>
+            </div>
+          
+
+				<!-- BEGIN PAGE CONTENT-->
+                <div class="row">
+                	<div class="col-md-12">
+                	<div class="portlet box purple">
+                    	<div class="portlet-title">
+                        	<div class="caption"><i class="icon-reorder"></i>图片</div>
+                        </div>
+                        <div class="portlet-body">
+                        	<div class="row">
+                            	<div class="col-md-4"></div>
+                                <div class="col-md-8"></div>
+                            </div>
+                            <hr class="clearfix"/>
+                            <div class="row">
+                    			<div class="col-md-3">
+                                	<div class="item">
+
+											<a class="fancybox-button" data-rel="fancybox-button" title="Photo" href="images/image1.jpg">
+
+												<div class="zoom">
+
+													<img src="images/image1.jpg" alt="Photo" rel="group1"/>                    
+
+													<div class="zoom-icon"></div>
+
+												</div>
+
+											</a>
+
+											<div class="details">
+
+												<span>图片</span>   
+
+											</div>
+
+										</div>
+                                </div>
+                       		 	<div class="col-md-3">
+                                	<div class="item">
+
+											<a class="fancybox-button" data-rel="fancybox-button" title="Photo" href="images/image2.jpg">
+
+												<div class="zoom">
+
+													<img src="images/image2.jpg" alt="Photo" rel="group1"/>                    
+
+													<div class="zoom-icon"></div>
+
+												</div>
+
+											</a>
+
+											<div class="details">
+
+												<span>图片</span>   
+
+											</div>
+
+										</div>
+                                </div>
+                                <div class="col-md-3">
+                                	<div class="item">
+
+											<a class="fancybox-button" data-rel="fancybox-button" title="Photo" href="images/image3.jpg">
+
+												<div class="zoom">
+
+													<img src="images/image3.jpg" alt="Photo" rel="group1"/>                    
+
+													<div class="zoom-icon"></div>
+
+												</div>
+
+											</a>
+
+											<div class="details">
+
+												<span>图片</span> 
+
+											</div>
+
+										</div>
+                                </div>
+                                <div class="col-md-3">
+                                	<div class="item">
+
+											<a class="fancybox-button" data-rel="fancybox-button" title="Photo" href="images/image4.jpg">
+
+												<div class="zoom">
+
+													<img src="images/image4.jpg" alt="Photo" rel="group1"/>                    
+
+													<div class="zoom-icon"></div>
+
+												</div>
+
+											</a>
+
+											<div class="details">
+
+												<span>图片</span>    
+
+											</div>
+
+										</div>
+                                </div>
+                    </div>
+                        </div>
+					</div>
+                    </div>
+				</div>
+                <!--END main-->
+                
+                
+  </div>
+        <!--END main-container-->
+    
+
+	<script>
+
+		jQuery(document).ready(function() {  
+      	$(".fancybox-button").fancybox({
+			 groupAttr: 'data-rel',//设置图片组
+            // prevEffect: 'none',//上一张效果
+             //nextEffect: 'none',//下一张效果
+             //closeBtn: true,
+                helpers: {
+                    title: {
+                        type: 'inside'
+                    }
+                }
+		});
+
+});
+		
+	</script>
+</body>
+</html>

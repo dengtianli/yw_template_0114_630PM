@@ -1,0 +1,83 @@
+/* CSS Document */
+.regist-bg{
+	background: url("../images/bgs/8.jpg") no-repeat center center fixed;
+  	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bgs/8.jpg', sizingMethod='scale');
+  	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bgs/8.jpg', sizingMethod='scale')";
+    -webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+}
+.regist-wrapper{
+	position:absolute;
+	top:90px;
+	left:0;
+	right:0;
+	text-align:center;
+}
+.regist-wrapper .logo{
+	margin-bottom: 45px;
+    position: relative;
+    left: -2px;
+}
+.regist-wrapper .box{
+	margin: 0 auto;
+  	padding: 35px 0 30px;
+  	float: none;
+  	width: 700px;
+  	box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+  	border-radius: 5px;
+  	background: rgba(255, 255, 255, 0.45);
+}
+.regist-wrapper .box .content-wrap {
+  width: 82%;
+  margin: 0 auto;
+  position:relative;
+}
+.regist-wrapper .box .content-wrap .form-horizontal{
+	text-align:left;
+}
+.regist-wrapper .box h6 {
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.regist-wrapper .box input[type="text"],
+.regist-wrapper .box input[type="password"] {
+  font-size: 15px;
+  height: 40px;
+  margin-bottom: 18px;
+  border-color: #b2bfc7;
+  padding-left: 0px;
+}
+.regist-wrapper .box .regist_input{
+	width:80%;
+	display:inline-block;
+	position:relative;
+	margin-left:0px;
+	padding-left:0px
+}
+.regist-wrapper .box .submit-regist{
+	text-align:center;
+}
+.required_star{
+	padding-left:3px;
+	vertical-align:middle;
+	font-size:20px;
+	color:#E02222
+}
+.validate-form{
+	display: inline-block;
+	padding-left: 5px;
+	vertical-align: middle;
+	color:#E02222;
+}
+.success .validate-form.ok:before{
+	content:"\f00c";
+	font-size:16px;
+	font-family:FontAwesome;
+	font-weight:normal;
+	display:inline-block;
+	color:#248443;
+}
